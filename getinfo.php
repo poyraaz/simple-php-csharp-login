@@ -20,8 +20,7 @@ if ($query)
     if ($_GET['password'] == $query['password'])
     {
         print_r("true");
-    }
-    else
+    } else
     {
         print_r("false");
     }
@@ -29,12 +28,10 @@ if ($query)
     if ($_GET['get'] == "credit")
     {
         print_r($query['credit']);
-    }
-    else if ($_GET['get'] == "uuid")
+    } else if ($_GET['get'] == "uuid")
     {
         print_r($query['uuid']);
-    }
-    else if ($_GET['get'] == "name")
+    } else if ($_GET['get'] == "name")
     {
         print_r($query['name']);
     }
