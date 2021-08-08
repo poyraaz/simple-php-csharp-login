@@ -39,9 +39,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`uuid`, `name`, `password`, `credit`) VALUES
-('864c885b-a723-4527-822a-d106c04a1f43', 'Ahmetflix', 'test', 1),
-('864c885b-a723-4527-822a-d106c04a1f43', 'Ahmetflix', 'test', 1),
-('test', 'Poyraz', 'asdasd', 40);
+('uuidtest1', 'vecho', 'xdxd', 31),
+('uuidtest2', 'Poyraz', 'asdasd', 5);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
