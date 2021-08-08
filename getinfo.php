@@ -3,7 +3,6 @@ header("Content-Type: application/json");
 $servername = "localhost"; // Sunucu
 $username = "root"; // Kullanıcı Adı
 $password = ""; // Şifre
-
 try
 {
     $conn = new PDO("mysql:host=$servername;dbname=dbName", $username, $password);
@@ -18,6 +17,15 @@ $id = $_GET['username'];
 $query = $conn->query("SELECT * FROM users WHERE name = '{$id}'")->fetch(PDO::FETCH_ASSOC);
 if ($query)
 {
+    if ($_GET['password'] == $query['password'])
+    {
+        print_r("true");
+    }
+    else
+    {
+        print_r("false");
+    }
+    
     if ($_GET['get'] == "credit")
     {
         print_r($query['credit']);
