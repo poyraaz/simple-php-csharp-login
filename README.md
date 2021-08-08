@@ -1,2 +1,2 @@
-# simple-php-csharp-login
+# Simple PHP/C# Login
 Simple PHP/MySQL &amp; C# login system.
